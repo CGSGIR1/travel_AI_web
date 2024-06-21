@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+TravelAI
+{% endblock %}
+
+{% block text %}
+Добро пожаловать на наш сайт построения умных маршрутов
+{% endblock %}
+
+{% block stuff %}
+<span>
+  <input list="city-select1">
+  <datalist name="cities1" id="city-select1">
+    <option value="">--Выберете город 1--</option>
+    <option value="moscow">Москва</option>
+    <option value="urupinsk">Урюпинск</option>
+    <option value="barnaul">Барнаул</option>
+    <option value="karaganda">Караганда</option>
+    <option value="chelnu">Набережные Челны</option>
+    <option value="kopi">Угольные Копи</option>
+  </datalist>
+  <input list="city-select2">
+  <datalist name="cities2" id="city-select2">
+    <option value="">--Выберете город 2--</option>
+    <option value="moscow">Москва</option>
+    <option value="urupinsk">Урюпинск</option>
+    <option value="barnaul">Барнаул</option>
+    <option value="karaganda">Караганда</option>
+    <option value="chelnu">Набережные Челны</option>
+    <option value="kopi">Угольные Копи</option>
+  </datalist>
+</span>
+    <div id="map" style="width: 600px; height: 400px"></div>
+{% endblock %}
